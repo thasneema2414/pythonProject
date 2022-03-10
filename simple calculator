@@ -1,0 +1,26 @@
+a = int(input("enter the first value: "))
+b = int(input("enter the second value: "))
+c = input("enter the operator: ")
+if c == '+':
+    print("Output: ", a + b)
+elif c == '-':
+    print("Output: ", a - b)
+elif c == '*':
+    print("Output: ", a * b)
+elif c == '/':
+    print("Output: ", a / b)
+else:
+    print("Invalid selection")
+    d = input("Do you want to continue?")
+    if d == 'yes':
+        c = input("enter the operator: ")
+        if c == '+':
+            print("Output: ", a + b)
+        elif c == '-':
+            print("Output: ", a - b)
+        elif c == '*':
+            print("Output: ", a * b)
+        elif c == '/':
+            print("Output: ", a / b)
+    else:
+        print("exit")
