@@ -1,0 +1,19 @@
+# String formatting
+name = input("enter the user name: ")
+age = int(input("enter user age: "))
+message = "Hi {}, You are {} years old"
+print()
+print(message.format(name, age))
+print('Hi, I am {} and I am {} years old?'.format(name, age))
+print()
+# String interpolation/ f-strings/ formatted string literals
+print()
+print(f'Hi, {name}, You are {age} years old')
+print(f'Hi, I am {name} and I am {age} years old')
+a = 10
+b = 20
+print(f'{a} + {b} is {a + b} and not {2 * (a + b)}')
+
+def greet(name, greeting):
+    return f'Hi, {name}, {greeting} to Green land'
+print(greet("Thasni", "Welcome"))
